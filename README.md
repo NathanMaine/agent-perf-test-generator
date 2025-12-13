@@ -1,6 +1,5 @@
 # Agent-Driven Performance Test Generator
 
-> 10th Grade Explanation
 Before a big sale (like Black Friday), this AI writes a script to simulate thousands of fake users visiting a website all at once.
 It checks if the site will crash, without a human needing to write the complex test code.
 
