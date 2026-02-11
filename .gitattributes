@@ -1,0 +1,2 @@
+# Mark tooling/scaffolding scripts as vendored so they don't skew language stats
+.specify/** linguist-vendored

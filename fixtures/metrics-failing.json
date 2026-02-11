@@ -1,0 +1,10 @@
+{
+  "p50_ms": 300,
+  "p90_ms": 550,
+  "p95_ms": 900,
+  "p99_ms": 1500,
+  "error_rate": 0.05,
+  "throughput_rps": 140,
+  "cpu_percent": 92,
+  "memory_percent": 88
+}

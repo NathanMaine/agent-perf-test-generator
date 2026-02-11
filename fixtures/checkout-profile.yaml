@@ -1,0 +1,24 @@
+service: checkout-api
+summary: Handles checkout flows for web and mobile clients.
+traffic:
+  baseline_rps: 50
+  peak_rps: 200
+  burst_factor: 3
+slo:
+  latency_ms:
+    p95: 400
+    p99: 800
+  error_rate: 0.01
+endpoints:
+  - path: /cart/submit
+    method: POST
+    critical: true
+  - path: /cart/view
+    method: GET
+    critical: true
+dependencies:
+  - payments-service
+  - inventory-service
+data:
+  uses_production_data: false
+  notes: use synthetic carts and test payment tokens.
